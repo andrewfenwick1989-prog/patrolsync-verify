@@ -57,7 +57,7 @@ export default function Home() {
         </form>
 
         <p className="text-xs text-slate-500 mt-4 text-center">
-          Powered by SyncCore
+          Powered by FenCore
         </p>
       </div>
     </main>

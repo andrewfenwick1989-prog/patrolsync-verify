@@ -23,7 +23,7 @@ export default async function VerifyPage({ params }: { params: Promise<{ id: str
             />
           </div>
           <h1 className="text-3xl font-bold">Report not found</h1>
-          <p className="text-sm text-slate-300 mt-2">Powered by SyncCore</p>
+          <p className="text-sm text-slate-300 mt-2">Powered by FenCore</p>
         </div>
       </main>
     );
@@ -42,7 +42,7 @@ export default async function VerifyPage({ params }: { params: Promise<{ id: str
             />
           </div>
           <h1 className="text-3xl font-bold">Report Verified</h1>
-          <p className="text-sm text-slate-300 mt-2">Powered by SyncCore</p>
+          <p className="text-sm text-slate-300 mt-2">Powered by FenCore</p>
         </div>
 
         <div className="text-left inline-block mt-4">
