@@ -55,6 +55,7 @@ export default async function VerifyPage({
   const generatedDate = new Date(data.generated_at);
   const isActivity = data.report_type === "activity" || data.report_type === "Activity Report";
   const isCompliance = data.report_type === "compliance" || data.report_type === "Staff Compliance Report";
+  const isAudit = data.report_type === "audit" || data.report_type === "Audit Log Report";
 
   return (
     <main className="min-h-screen bg-slate-950 text-white">
@@ -166,6 +167,34 @@ export default async function VerifyPage({
                   ) : null}
                 </div>
               ) : null}
+
+              {isAudit ? (
+                <div className="mt-6 rounded-3xl border border-indigo-400/10 bg-indigo-400/[0.04] p-5">
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-indigo-300/80">
+                    Audit verification
+                  </p>
+
+                  <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                    <div className="rounded-2xl border border-white/8 bg-slate-900/60 p-4">
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+                        Total actions
+                      </p>
+                      <p className="mt-2 text-base font-semibold text-white">
+                        {data.row_count ?? data.meta?.total_actions ?? "—"}
+                      </p>
+                    </div>
+
+                    <div className="rounded-2xl border border-white/8 bg-slate-900/60 p-4">
+                      <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+                        Verification type
+                      </p>
+                      <p className="mt-2 text-base font-semibold text-white">
+                        Internal portal activity
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ) : null}
             </section>
 
             <aside className="space-y-6">
@@ -174,6 +203,7 @@ export default async function VerifyPage({
                 <h3 className="mt-3 text-xl font-semibold text-white">Authenticity confirmed</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-300">
                   PatrolSync has confirmed this report against a stored verification record. The visible report details match the original generated document record.
+                  {isAudit ? " This verification relates to recorded internal portal activity." : ""}
                 </p>
               </div>
 
