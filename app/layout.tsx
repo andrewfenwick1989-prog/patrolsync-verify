@@ -17,7 +17,9 @@ export const metadata: Metadata = {
   description:
     "Verify the authenticity of PatrolSync security patrol reports using the official verification service powered by SyncCore.",
   icons: {
-    icon: "/patrolsync-logo.png",
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
   },
 };
 
