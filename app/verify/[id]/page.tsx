@@ -23,7 +23,7 @@ export default async function VerifyPage({
     return (
       <main className="min-h-screen bg-slate-950 text-white">
         <div className="mx-auto flex min-h-screen max-w-3xl items-center justify-center px-6 py-12">
-          <div className="w-full rounded-3xl border border-white/10 bg-white/5 p-10 text-center shadow-2xl backdrop-blur-sm">
+          <div className="w-full rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-10 text-center shadow-2xl backdrop-blur-sm">
             <div className="mb-6 flex justify-center">
               <Image
                 src="/patrolsync-logo.png"
@@ -60,22 +60,22 @@ export default async function VerifyPage({
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <div className="mx-auto max-w-5xl px-6 py-10">
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-4 sm:p-8 shadow-2xl">
 
-          <div className="flex items-center justify-between mb-8">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
             <div className="flex items-center gap-4">
               <Image src="/patrolsync-logo.png" alt="PatrolSync" width={48} height={48} />
               <div>
                 <p className="text-green-400 text-xs uppercase tracking-widest">
                   Verified by PatrolSync
                 </p>
-                <h1 className="text-3xl font-bold">Report Verified</h1>
+                <h1 className="text-2xl sm:text-3xl font-bold">Report Verified</h1>
               </div>
             </div>
 
-            <div className="text-right">
+            <div className="sm:text-right">
               <p className="text-xs text-slate-400 uppercase">Verification ID</p>
-              <p className="font-mono text-sm">{data.verification_id}</p>
+              <p className="font-mono text-sm break-all">{data.verification_id}</p>
             </div>
           </div>
 

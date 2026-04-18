@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <div className="mx-auto flex min-h-screen max-w-5xl items-center justify-center px-6 py-10">
-        <div className="w-full overflow-hidden rounded-[28px] border border-white/10 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 shadow-2xl shadow-black/40">
+        <div className="w-full overflow-hidden rounded-2xl sm:rounded-[28px] border border-white/10 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 shadow-2xl shadow-black/40">
           <div className="grid gap-0 lg:grid-cols-[1.1fr_.9fr]">
-            <section className="border-b border-white/10 px-8 py-10 lg:border-b-0 lg:border-r">
+            <section className="border-b border-white/10 px-4 sm:px-8 py-10 lg:border-b-0 lg:border-r">
               <div className="flex items-center gap-4">
                 <div className="rounded-2xl border border-white/10 bg-white/5 p-3 shadow-lg">
                   <Image
@@ -67,7 +67,7 @@ export default function Home() {
               </div>
             </section>
 
-            <aside className="px-8 py-10">
+            <aside className="px-4 sm:px-8 py-10">
               <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-lg">
                 <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">
                   Verification lookup
