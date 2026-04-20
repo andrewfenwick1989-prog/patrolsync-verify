@@ -44,7 +44,7 @@ export default async function VerifyPage({
             </p>
 
             <p className="mt-8 text-xs text-slate-500 uppercase tracking-widest">
-              Powered by FenCore Cloud
+              Powered by FenJar Cloud
             </p>
           </div>
         </div>

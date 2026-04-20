@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "PatrolSync Report Verification",
   description:
-    "Verify the authenticity of PatrolSync security patrol reports using the official verification service powered by SyncCore.",
+    "Verify the authenticity of PatrolSync security patrol reports using the official verification service powered by FenJar.",
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",
