@@ -93,7 +93,7 @@ export default async function VerifyPage({
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="rounded-2xl border border-white/8 bg-slate-900/60 p-4">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Organisation</p>
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Security company</p>
                   <p className="mt-2 text-base font-semibold text-white">{data.org_name}</p>
                 </div>
 
@@ -148,19 +148,19 @@ export default async function VerifyPage({
                         <p className="mt-2 text-base font-semibold text-white">{data.meta.summary.total_guards ?? "—"}</p>
                       </div>
                       <div className="rounded-2xl border border-white/8 bg-slate-900/60 p-4">
-                        <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Licence records</p>
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Compliance records</p>
                         <p className="mt-2 text-base font-semibold text-white">{data.meta.summary.licence_records_recorded ?? "—"}</p>
                       </div>
                       <div className="rounded-2xl border border-white/8 bg-slate-900/60 p-4">
-                        <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Right to work records</p>
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Work eligibility records</p>
                         <p className="mt-2 text-base font-semibold text-white">{data.meta.summary.right_to_work_records_recorded ?? "—"}</p>
                       </div>
                       <div className="rounded-2xl border border-white/8 bg-slate-900/60 p-4">
-                        <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Licence review soon</p>
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Compliance review soon</p>
                         <p className="mt-2 text-base font-semibold text-white">{data.meta.summary.licence_review_soon ?? "—"}</p>
                       </div>
                       <div className="rounded-2xl border border-white/8 bg-slate-900/60 p-4 sm:col-span-2">
-                        <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Right to work review soon</p>
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Work eligibility review soon</p>
                         <p className="mt-2 text-base font-semibold text-white">{data.meta.summary.right_to_work_review_soon ?? "—"}</p>
                       </div>
                     </div>
