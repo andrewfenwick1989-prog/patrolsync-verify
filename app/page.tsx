@@ -110,7 +110,7 @@ export default function Home() {
                 </div>
 
                 <p className="mt-6 text-xs uppercase tracking-[0.2em] text-slate-500">
-                  Powered by FenJar Cloud
+                  Powered by PatrolSync Cloud
                 </p>
               </div>
             </aside>
